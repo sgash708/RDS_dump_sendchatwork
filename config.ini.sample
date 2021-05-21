@@ -1,0 +1,9 @@
+[chatwork]
+Token   = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
+URL     = 'https://api.chatwork.com/v2/rooms/xxxxxx/files'
+HEAD    = '[toall]'
+
+[fileinfo]
+before_path = '/home/ec2-user/shellscript/to/path'
+after_path = '_dump.sql'
+shell_path = '/home/ec2-user/shellscript_name.sh
