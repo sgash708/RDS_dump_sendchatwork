@@ -29,8 +29,6 @@ today = datetime.date.today()
 file_name = today.strftime('%Y%m%d') + conf.get('fileinfo', 'after_path')
 file_path = conf.get('fileinfo', 'before_path') + file_name
 
-sys.stderr.write(file_path)
-
 if os.path.exists(file_path) == False :
     sys.stderr.write("ファイルは存在しません。\r処理を終了します。")
 
@@ -45,7 +43,7 @@ post_data = {
     "message": conf.get('chatwork', 'HEAD')
 }
 
-url = conf.get('chatwork', 'URL') + '/files'
+url = conf.get('chatwork', 'URL')
 post_url = url
 post_headers = {'X-ChatWorkToken': conf.get('chatwork', 'TOKEN')}
 requests.post(
